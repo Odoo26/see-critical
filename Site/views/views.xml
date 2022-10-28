@@ -7,7 +7,7 @@
 		<field name="arch" type="xml">
 			<tree string="Sites Global Liste">
 				<field name="name"/>
-				<field name="type"/>
+				<field name="types"/>
 		</tree>
 		</field>
 	</record>
@@ -19,7 +19,7 @@
 		<field name="arch" type="xml">
 			<tree string="Sites Liste">
 				<field name="name"/>
-				<field name="type" options="{'no_create': True,'no_create_edit': True}" optional="hide"/>
+				<field name="types" options="{'no_create': True,'no_create_edit': True}" optional="hide"/>
 				<field name="adresse" optional="hide"/>
 				<field name="commune"/>
 				<field name="num_dept"/>
@@ -40,7 +40,7 @@
 				<notebook>
 					<page string="Description">
 						<group>
-							<field name="type" options="{'no_create': True,'no_create_edit': True}" optional="hide"/>
+							<field name="types" options="{'no_create': True,'no_create_edit': True}" optional="hide"/>
 							<field name="adresse"/>
 							<field name="commune"/>
 							<field name="num_dept"/>
