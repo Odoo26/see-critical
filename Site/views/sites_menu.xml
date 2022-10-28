@@ -21,5 +21,5 @@
 <menuitem name="Type de materiel" id="sites_types_menu"
 	parent="sites_root_menu"
 	action="action_types_sites"
-	/>
+	sequence="2"/>
 </odoo>
