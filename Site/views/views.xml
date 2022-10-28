@@ -52,9 +52,9 @@
 			</form>
 		</field>
 	</record>
-	<record model="ir.ui.view" id="type_sites_view_tree">
+	<record model="ir.ui.view" id="types_sites_view_tree">
 							<field name="name">Type tree View</field>
-							<field name="model">type.sites</field>
+							<field name="model">types.sites</field>
 							<field name="priority" eval="17"/>
 							<field name="arch" type="xml">
 								<tree string="Type Liste">
@@ -63,11 +63,11 @@
 							</field>
 						</record>
 
-					<record model="ir.ui.view" id="type_sites_view_form">
-							<field name="name">type.sites.view.form</field>
-							<field name="model">type.sites</field>
+					<record model="ir.ui.view" id="types_sites_view_form">
+							<field name="name">types.sites.view.form</field>
+							<field name="model">types.sites</field>
 							<field name="arch" type="xml">
-								<form string="Type">
+								<form string="Types">
 									<sheet>
 									<h1>
 										<field name="name" placeholder="Type de materiel"/>

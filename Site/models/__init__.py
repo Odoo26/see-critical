@@ -1,2 +1,2 @@
 from . import sites
-from . import type
+from . import types
