@@ -12,13 +12,11 @@
 		<field name="res_model">types.sites</field>
 		<field name="view_mode">tree,form</field>
 	</record>
-<menuitem name="Site en Maintenance" id="sites_root_menu"/>
-
-<menuitem name="Sites Global" id="sites_global_menu"
+<menuitem name="Site en Maintenance" id="sites_root_menu"
 	parent="sites_root_menu"
 	action="action_sitesG_sites"
 	sequence="1"/>
-<menuitem name="Configuration" id="config_global_menu"/>	
+
 <menuitem name="Type de materiel" id="sites_types_menu"
 	parent="sites_root_menu"
 	action="action_types_sites"
