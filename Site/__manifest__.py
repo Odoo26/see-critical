@@ -7,7 +7,6 @@
     'depends': ['base'],
     'data': [
         'views/views.xml',
-        'views/vehicule.xml',
         'security/ir.model.access.csv',
         'views/sites_menu.xml',
         ],
