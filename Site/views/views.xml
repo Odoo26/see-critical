@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record model="ir.ui.view" id="sitesG_sites_view_tree">
+		<field name="name">SitesGlobal tree View</field>
+		<field name="model">sites.sites</field>
+		<field name="priority" eval="16"/>
+		<field name="arch" type="xml">
+			<tree string="Sites Global Liste">
+				<field name="name"/>
+				<field name="type"/>
+		</tree>
+		</field>
+	</record>
+			
+	<record model="ir.ui.view" id="sites_sites_view_tree">
+		<field name="name">Sites tree View</field>
+		<field name="model">sites.sites</field>
+		<field name="priority" eval="16"/>
+		<field name="arch" type="xml">
+			<tree string="Sites Liste">
+				<field name="name"/>
+				<field name="type"/>
+				<field name="adresse" optional="hide"/>
+				<field name="commune"/>
+				<field name="num_dept"/>
+				<field name="code_postal"/>
+				</tree>
+		</field>
+	</record>
+
+<record model="ir.ui.view" id="sites_sites_view_form">
+		<field name="name">sites.sites.view.form</field>
+		<field name="model">sites.sites</field>
+		<field name="arch" type="xml">
+			<form string="Sites">
+				<sheet>
+				<h1>
+					<field name="name" placeholder="Nom du sites"/>
+				</h1>
+				<notebook>
+					<page string="Description">
+						<group>
+							<field name="type"/>
+							<field name="adresse"/>
+							<field name="commune"/>
+							<field name="num_dept"/>
+							<field name="code_postal"/>
+							<field name="long"/>
+							<field name="lat"/>
+							<field name="alt_ngf"/>
+						</group>
+					</page>
+				</notebook>
+			</sheet>
+			</form>
+		</field>
+	</record>
+</odoo>
