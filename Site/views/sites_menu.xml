@@ -13,11 +13,6 @@
 		<field name="view_mode">tree,form</field>
 	</record>
 <menuitem name="Site en Maintenance" id="sites_root_menu"/>
-
-<menuitem name="Sites Global" id="sites_global_menu"
-	parent="sites_root_menu"
-	action="action_sitesG_sites"
-	sequence="1"/>
 <menuitem name="Type de materiel" id="sites_type_menu"
 	parent="sites_root_menu"
 	action="action_type_sites"
