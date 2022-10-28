@@ -19,7 +19,7 @@
 		<field name="arch" type="xml">
 			<tree string="Sites Liste">
 				<field name="name"/>
-				<field name="type"/>
+				<field name="type" options="{'no_create': True,'no_create_edit': True}" optional="hide"/>
 				<field name="adresse" optional="hide"/>
 				<field name="commune"/>
 				<field name="num_dept"/>
@@ -40,7 +40,7 @@
 				<notebook>
 					<page string="Description">
 						<group>
-							<field name="type"/>
+							<field name="type" options="{'no_create': True,'no_create_edit': True}" optional="hide"/>
 							<field name="adresse"/>
 							<field name="commune"/>
 							<field name="num_dept"/>
@@ -52,4 +52,29 @@
 			</form>
 		</field>
 	</record>
+	<record model="ir.ui.view" id="type_sites_view_tree">
+							<field name="name">Type tree View</field>
+							<field name="model">type.sites</field>
+							<field name="priority" eval="17"/>
+							<field name="arch" type="xml">
+								<tree string="Type Liste">
+									<field name="name"/>
+								</tree>
+							</field>
+						</record>
+
+					<record model="ir.ui.view" id="type_sites_view_form">
+							<field name="name">type.sites.view.form</field>
+							<field name="model">type.sites</field>
+							<field name="arch" type="xml">
+								<form string="Type">
+									<sheet>
+									<h1>
+										<field name="name" placeholder="Type de materiel"/>
+									</h1>
+
+								</sheet>
+								</form>
+							</field>
+						</record>
 </odoo>
