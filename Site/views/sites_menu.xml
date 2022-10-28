@@ -2,7 +2,7 @@
 <odoo>
 	<record model="ir.actions.act_window"
 	id="action_sitesG_sites">
-		<field name="name">Sites Gloabl</field>
+		<field name="name">Sites Global</field>
 		<field name="res_model">sites.sites</field>
 		<field name="view_mode">tree,form</field>
 	</record>
