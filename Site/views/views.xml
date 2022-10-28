@@ -57,7 +57,7 @@
 							<field name="model">types.sites</field>
 							<field name="priority" eval="17"/>
 							<field name="arch" type="xml">
-								<tree string="Type Liste">
+								<tree string="Types Liste">
 									<field name="name"/>
 								</tree>
 							</field>
