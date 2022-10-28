@@ -47,6 +47,11 @@
 							<field name="code_postal"/>
 						</group>
 					</page>
+				<page string="Type">
+						<group>
+						<field name="type de materiel" options="{'no_create': True,'no_create_edit': True}"/>
+					</group>
+				</page>	
 				</notebook>
 			</sheet>
 			</form>
