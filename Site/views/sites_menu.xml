@@ -18,11 +18,8 @@
 	parent="sites_root_menu"
 	action="action_sitesG_sites"
 	sequence="1"/>
-<menuitem name="Configuration" id="sites_config_menu"
-	parent="sites_root_menu"
-	sequence="2"/>
 <menuitem name="Type de materiel" id="sites_type_menu"
-	parent="sites_config_menu"
+	parent="sites_root_menu"
 	action="action_type_sites"
 	/>
 </odoo>
