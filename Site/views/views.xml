@@ -45,9 +45,6 @@
 							<field name="commune"/>
 							<field name="num_dept"/>
 							<field name="code_postal"/>
-							<field name="long"/>
-							<field name="lat"/>
-							<field name="alt_ngf"/>
 						</group>
 					</page>
 				</notebook>
