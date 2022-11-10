@@ -18,7 +18,6 @@
 		<field name="priority" eval="16"/>
 		<field name="arch" type="xml">
 			<tree string="Sites Liste">
-				<field name="inherit_id" contact="name"/>
 				<field name="name"/>
 				<field name="types" options="{'no_create': True,'no_create_edit': True}" optional="hide"/>
 				<field name="adresse" optional="hide"/>
