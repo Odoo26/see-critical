@@ -4,7 +4,8 @@
     'license': "AGPL-3",
     'category': 'Tools',
     'summary': 'Gestion des sites en maintenance',
-    'depends': ['base'],
+    'depends': ['base',
+                'contacts'],
     'data': [
         'views/views.xml',
         'security/ir.model.access.csv',
